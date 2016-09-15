@@ -1,8 +1,3 @@
-%professor terminei em cima da hora e testei algumas matrizes, n„o gerou
-%erro, se der algum b.o. com alguma matriz foi pq deixei passar batido, me desulpe.
-
-%david jordao mesquita bellini dos santos 1602450021
-%diogo munho
 clc
 clear
 l=input('entre com a matriz de coeficientes:\n');
@@ -26,7 +21,7 @@ x=1;
 m=0;
 temp=zeros(l_size(1,1));
 v1=zeros(l_size+1);
-%n„o esquecer de fazer a conferencia ,se a(1,1)=0 muito importante.
+%n√£o esquecer de fazer a conferencia ,se a(1,1)=0 muito importante.
 if(l(1,1)==0)
     for i1=1:l_size(1,1)
         temp(1,i1)=l(i1,1);
@@ -34,7 +29,7 @@ if(l(1,1)==0)
     end
     for i1=1:l_size(1,1)%metodo bolha para ordenar de forma crecente
         for i2=i1+1:l_size(1,1)%onde temp(1,2) vai mostrar a linha que deve ser trocada pela primeira
-            if(temp(1,i1)<temp(1,i2))%deu dor de cabeÁa pra montar haha mas usei a base do metodo bolha de vetor so que pra matriz
+            if(temp(1,i1)<temp(1,i2))%deu dor de cabe√ßa pra montar haha mas usei a base do metodo bolha de vetor so que pra matriz
                 trade(1,1)=temp(1,i1);
                 trade(2,1)=temp(2,i1);
                 temp(1,i1)=temp(1,i2);
@@ -45,7 +40,7 @@ if(l(1,1)==0)
         end
     end
     ar=temp(2,1);%armazeno o indice de referencia de pos. para troca 
-    for i=1:l_size(1,1)+1%faÁo a troca das linhas amazendo na linha de destino
+    for i=1:l_size(1,1)+1%fa√ßo a troca das linhas amazendo na linha de destino
         v1(i)=l(ar,i);
         l(ar,i)=l(1,i);
     end
@@ -54,10 +49,10 @@ if(l(1,1)==0)
     end
 end
 for acoluna=1:l_size(1,1)-1
-    for alinha=x:l_size(1,1)-1%ir a menos -1 pois sen„o excede no alinha +1 como trabalho com um vetor sempre a frente, ele tem que para um antes
+    for alinha=x:l_size(1,1)-1%ir a menos -1 pois sen√£o excede no alinha +1 como trabalho com um vetor sempre a frente, ele tem que para um antes
     m1=l(alinha,acoluna);
 
-        if(alinha==acoluna && acoluna~=l_size(1,1) && alinha~=l_size(1,1))%sÛ È usado para gerar 1 no item a(1,1)   
+        if(alinha==acoluna && acoluna~=l_size(1,1) && alinha~=l_size(1,1))%s√≥ √© usado para gerar 1 no item a(1,1)   
             for indice=1:l_size(1,1)+1%ele vai pegar a(1,1) e dividir por toda a linha
                 l(alinha,indice)=l(alinha,indice)/m1;%termina o for com ponteiro em a(1,3) p/ caso do ex.
             end
