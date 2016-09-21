@@ -8,7 +8,7 @@ b_size=size(b);
 b_controle=b_size(1,2)+1;
 trade=0;
 clc;
-%caso a matriz n„o seja quadrada
+%caso a matriz n√£o seja quadrada
 while(l_size(1,1)~=l_size(1,2) || l_size(1,1)~=b_size(1,2))
     disp('numero de colunas diferente do numero de linhas \n digite uma matriz quadrada \n')
     l=input('entre com a matriz a:\n');
@@ -18,7 +18,7 @@ while(l_size(1,1)~=l_size(1,2) || l_size(1,1)~=b_size(1,2))
     clc;
 end
 
-beta=ones(b_size);%preciso preencher com 1 esssa matriz para garantir que n„o gere erro nas funÁıes posteriores
+beta=ones(b_size);%preciso preencher com 1 esssa matriz para garantir que n√£o gere erro nas fun√ß√µes posteriores
 %for indice=1:l_size(1,1)aparentemente o matlab tem um comando para criar
 %matriz de zeros
 %    beta(indice)=1;
@@ -42,7 +42,7 @@ for fixo=1:l_size(1,1)
     beta(fixo)=betax/abs(l(fixo,fixo));
 end
 
-%ordenando o beta , para saber quem È o beta maximo
+%ordenando o beta , para saber quem √© o beta maximo
 for i1=1:l_size(1,1)
     for i2=i1+1:l_size(1,1)
         if(beta(i1)<beta(i2))
@@ -58,5 +58,3 @@ if(beta(1)>1)
 else
     disp('matriz converge = ok');
 end
-
-
