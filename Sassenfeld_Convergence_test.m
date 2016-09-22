@@ -28,7 +28,7 @@ beta=ones(b_size);%preciso preencher com 1 esssa matriz para garantir que não g
 for linha=1:l_size(1,1)
     l(linha,l_size(1,2)+1)=b(linha);
 end
-
+%não esquecer de confirmar se item l(1,1)=~0
 %calculo da convergencia da matriz
 for fixo=1:l_size(1,1)
     betax=0;
