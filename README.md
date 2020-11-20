@@ -1,4 +1,5 @@
-# gauss_matlab
+#basic numerical methods - engineering applications
 ================
-basic numerical methods - engineering applications
-
+Gauss Jacobi
+Gauss Jordan
+Gauss Seidel
